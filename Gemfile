@@ -56,3 +56,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Slugging and permalink plugins for Active Record. It lets you create pretty URLs and work with human-friendly strings as if they were numeric ids.
 gem 'friendly_id', '~> 5.2.4'
+
+# Flexible authentication solution for Rails with Warden
+gem 'devise', '~> 4.6', '>= 4.6.1'

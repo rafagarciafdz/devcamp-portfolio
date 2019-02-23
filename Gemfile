@@ -60,3 +60,8 @@ gem 'friendly_id', '~> 5.2.4'
 
 # Flexible authentication solution for Rails with Warden
 gem 'devise', '~> 4.6', '>= 4.6.1'
+
+# Framework for building responsive, mobile-first sites
+gem 'bootstrap', '~> 4.1.0'
+gem 'mini_racer'
+gem 'jquery-rails'

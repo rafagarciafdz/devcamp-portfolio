@@ -65,3 +65,6 @@ gem 'devise', '~> 4.6', '>= 4.6.1'
 gem 'bootstrap', '~> 4.1.0'
 gem 'mini_racer'
 gem 'jquery-rails'
+
+#Own gem
+gem 'devcamp_view_tool', git: 'https://github.com/rafagarciafdz/devcamp_view_tool'

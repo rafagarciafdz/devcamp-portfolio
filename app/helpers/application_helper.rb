@@ -15,4 +15,8 @@ module ApplicationHelper
     end
   end
 
+  def copyright_generator
+    DevcampViewTool::Renderer.copyright 'Rafael García', 'All rights reserved'
+  end
+
 end

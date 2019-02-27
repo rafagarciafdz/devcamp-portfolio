@@ -66,8 +66,11 @@ gem 'bootstrap', '~> 4.1.0'
 gem 'mini_racer'
 gem 'jquery-rails'
 
-#Own gem sin publicar
-# gem 'devcamp_view_tool', git: 'https://github.com/rafagarciafdz/devcamp_view_tool'
+# Own gem sin publicar
+#gem 'devcamp_view_tool', git: 'https://github.com/rafagarciafdz/devcamp_view_tool'
 
 #Own gem publicada
 gem 'devcamp_copyright_ra', '~> 0.3.0'
+
+# Read action and content based authorizations.
+gem 'petergate', '~> 2.0.1'

@@ -1,9 +1,26 @@
-<h1>Pages#contact</h1>
+<h1>Work together?</h1>
 
-<p><%= number_to_phone "5555555555" %></p>
+<div class="row">
+	<div class="col-md-6">
+		<h4>Office Address</h4>
+		<p>Av. Roberto Garza Sada 1000, Carrizalejo, 66254 San Pedro Garza García, N.L.</p>
 
-<p><%= number_to_currency "115" %></p>
+		<h4>Phone</h4>
+		<p><%= number_to_phone "5555555555" %></p>
 
-<p><%= number_to_percentage "80.4" %></p>
+		<h4>Cost p/hour</h4>
+		<p><%= number_to_currency "115" %></p>
 
-<p><%= number_with_delimiter "3446345736466763734.563" %></p>
+		<h4>Benefits</h4>
+		<p><%= number_to_percentage "80.4" %></p>
+
+		<h4># Clients</h4>
+		<p><%= number_with_delimiter "3446345736466763734.563" %></p>
+
+		<h4>Email</h4>
+		<p><%= mail_to "me@domain.com", "Email me", subject: "This is an example email" %></p>
+	</div>
+	<div class="col-md-6">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.028021575434!2d-100.36001408541327!3d25.637195483693457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662bdd08330c385%3A0x1597c9d68305a125!2sPlanetario+Alfa!5e0!3m2!1ses-419!2smx!4v1551531090921" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
+</div>

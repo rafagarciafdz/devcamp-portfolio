@@ -1,14 +1,27 @@
-<p id="notice"><%= notice %></p>
+<main role="main" class="container">
+  <div class="row">
+    <div class="col-md-8 blog-main">
+      <h3 class="pb-4 mb-4 font-italic border-bottom">
+        Showing Blog
+      </h3>
+      
+      <div class="blog-post">
+				<h2 class="blog-post-title"><%= @blog.title %></h2>
+				<p class="blog-post-meta">Published <%= distance_of_time_in_words(@blog.created_at, Time.now) %> ago by<a href="#">Mark</a></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @blog.title %>
-</p>
+				<hr>
+				<%= link_to @blog.status, toggle_status_blog_path(@blog) %>
+				<%= link_to '| Edit', edit_blog_path(@blog) if logged_in?(:site_admin) %>
+				<%= link_to '| Delete post', @blog, method: :delete, data: { confirm: 'Are you sure?' } if logged_in?(:site_admin) %>
+				<hr>
 
-<p>
-  <strong>Body:</strong>
-  <%= @blog.body %>
-</p>
+				<%= @blog.body %>
 
-<%= link_to 'Edit |', edit_blog_path(@blog) if logged_in?(:site_admin) %>
-<%= link_to 'Back', blogs_path %>
+			</div><!-- /.blog-post -->
+			<p><%= link_to 'Back', blogs_path %></p>
+    </div><!-- /.blog-main -->
+
+    <%= render 'shared/blog_sidebar' %>
+    
+  </div><!-- /.row -->
+</main><!-- /.container -->

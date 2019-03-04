@@ -1,0 +1,19 @@
+<div class="row mb-2">
+  <% @featured_blogs.each do |featured_blog| %>
+	<div class="col-md-6">
+		<div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+			<div class="col p-4 d-flex flex-column position-static">
+				<strong class="d-inline-block mb-2 text-primary"><%= featured_blog.topic.title %></strong>
+				<h3 class="mb-0"><%= featured_blog.title %></h3>
+				<div class="mb-1 text-muted"><%= featured_blog.created_at.strftime('%b %d') %></div>
+				<p class="card-text mb-auto">T<%= featured_blog.body.truncate(80) %></p>
+				<%= link_to 'Continue reading', featured_blog, class: 'stretched-link' %>
+			</div>
+			<div class="col-auto d-none d-lg-block">
+				<%= image_tag 'https://via.placeholder.com/200x250' %>
+			</div>
+		</div>
+	</div>
+	<% end %>
+</div>
+</div>

@@ -9,7 +9,11 @@ class Blog < ApplicationRecord
   belongs_to :topic
 
   def self.special_blogs
-  	all
+  	order(id: :desc)
+  end
+
+  def self.featured_blog
+    first
   end
 
   def self.featured_blogs

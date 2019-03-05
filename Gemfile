@@ -74,3 +74,9 @@ gem 'devcamp_copyright_ra', '~> 0.3.0'
 
 # Read action and content based authorizations.
 gem 'petergate', '~> 2.0.1'
+
+# Awesome icons
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.1'
+
+# Scope & Engine based, clean, powerful, agnostic, customizable and sophisticated paginator for Rails 3+
+gem 'kaminari', :git => 'https://github.com/kaminari/kaminari'

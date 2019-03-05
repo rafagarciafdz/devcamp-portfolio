@@ -24,8 +24,13 @@
 
   <div class="p-4">
     <h4 class="font-italic">Elsewhere</h4>
-    <ol class="list-unstyled">
+    <ol class="list-unstyled social-links">
       <li><%= link_to 'Write New Blog', new_blog_path if logged_in?(:site_admin) %></li>
+      <li><%= link_to fa_icon "github" %></li>
+      <li><%= link_to fa_icon "twitter" %></li>
+      <li><%= link_to fa_icon "facebook" %></li>
+      <li><%= link_to fa_icon "instagram" %></li>
+      <li><%= link_to fa_icon "twitch" %></li>
     </ol>
   </div>
 </aside><!-- /.blog-sidebar -->

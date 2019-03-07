@@ -14,12 +14,10 @@
   <body>
     <%= render "portfolios/portfolio_header" %>
 
-    <%= render "shared/nav", location: 'top' %>
-
-    <%= login_helper %>
-
     <%= yield %>
 
     <%= source_helper("portfolio") %>
+
+    <%= render "portfolios/portfolio_footer" %>
   </body>
 </html>

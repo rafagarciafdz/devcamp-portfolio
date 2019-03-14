@@ -80,3 +80,6 @@ gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.1'
 
 # Scope & Engine based, clean, powerful, agnostic, customizable and sophisticated paginator for Rails 3+
 gem 'kaminari', :git => 'https://github.com/kaminari/kaminari'
+
+# jQuery UI's JavaScript, CSS, and image files packaged for the Rails 3.1+ asset pipeline
+gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'

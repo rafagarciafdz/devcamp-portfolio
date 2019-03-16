@@ -83,3 +83,15 @@ gem 'kaminari', :git => 'https://github.com/kaminari/kaminari'
 
 # jQuery UI's JavaScript, CSS, and image files packaged for the Rails 3.1+ asset pipeline
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
+
+# Upload files in your Ruby applications, map them to a range of ORMs, store them on different backends.
+gem 'carrierwave', '~> 1.3', '>= 1.3.1'
+
+# Manipulate images with minimal use of memory
+gem 'mini_magick', '~> 4.9', '>= 4.9.3'
+
+# Use aws-sdk for S3 support in CarrierWave
+gem 'carrierwave-aws', '~> 1.3'
+
+# Autoload dotenv in Rails.
+gem 'dotenv-rails', '~> 2.7', '>= 2.7.1'

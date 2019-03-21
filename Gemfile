@@ -95,3 +95,6 @@ gem 'carrierwave-aws', '~> 1.3'
 
 # Autoload dotenv in Rails.
 gem 'dotenv-rails', '~> 2.7', '>= 2.7.1'
+
+#Unobtrusive nested forms handling, using jQuery. Use this and discover cocoon-heaven.
+gem 'cocoon', '~> 1.2', '>= 1.2.12'

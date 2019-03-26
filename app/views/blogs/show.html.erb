@@ -19,15 +19,7 @@
 
 			</div><!-- /.blog-post -->
 
-			<% unless current_user.is_a? GuestUser %>
-		  	<%= form_with url: '#' do |form| %>
-		  		<div class="form-group">
-		  			<%= form.label :content %>
-		    		<%= form.text_area :content, class: 'form-control' %>
-		  		</div>
-		  		<%= form.submit "Post Comment", class: 'btn btn-primary' %>
-		  	<% end %>
-		  <% end %>
+			<%= render 'comments/form' %>
 
 		  <%= render @blog.comments %>
 

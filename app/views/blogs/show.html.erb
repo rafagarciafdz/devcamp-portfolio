@@ -15,6 +15,10 @@
 				<%= link_to '| Delete post', @blog, method: :delete, data: { confirm: 'Are you sure?' } if logged_in?(:site_admin) %>
 				<hr>
 
+				<p>
+					<%= @blog.topic.title %>
+				</p>
+
 				<%= @blog.body %>
 
 			</div><!-- /.blog-post -->

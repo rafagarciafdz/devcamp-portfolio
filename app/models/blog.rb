@@ -10,15 +10,15 @@ class Blog < ApplicationRecord
 
   has_many :comments, dependent: :destroy
 
-  def self.special_blogs
-  	order(id: :desc)
-  end
-
   def self.featured_blog
     first
   end
 
   def self.featured_blogs
   	limit(2)
+  end
+
+  def self.recent
+    order(created_at: :desc)
   end
 end

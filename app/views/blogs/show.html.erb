@@ -19,7 +19,7 @@
 					<%= @blog.topic.title %>
 				</p>
 
-				<%= @blog.body %>
+				<%= markdown(@blog.body) %>
 
 			</div><!-- /.blog-post -->
 

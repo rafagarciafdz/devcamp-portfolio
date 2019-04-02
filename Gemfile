@@ -107,3 +107,9 @@ gem 'twitter', '~> 6.2'
 
 # A Ruby client that tries to match Redis' API one-to-one, while still providing an idiomatic interface.
 gem 'redis', '~> 4.1'
+
+# A fast, safe and extensible Markdown to (X)HTML parser
+gem 'redcarpet', '~> 3.4'
+
+# Fast and easy syntax highlighting for selected languages, written in Ruby. Comes with RedCloth integration and LOC counter.
+gem 'coderay', '~> 1.1', '>= 1.1.2'

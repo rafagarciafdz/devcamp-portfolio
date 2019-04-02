@@ -40,6 +40,16 @@ body {
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 }
 
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6,
+p, .p{
+  font-family: 'Questrial', sans-serif;
+}
+
 .cover-container {
   max-width: 65em;
 }
@@ -171,3 +181,32 @@ body {
  .tech-news > .card{
   padding: 30px;
  }
+
+ .app-card-container {
+   color: black;
+   text-align: left;
+ }
+
+ .app-card-container > .card{
+   padding: 30px;
+ }
+
+ .profile_img{
+   border: 1px solid gray;
+ }
+  
+ .app-card-container a{
+   color: black;
+ }
+
+
+ .card-block{
+   margin-top: 5px;
+   margin-bottom: 5px;
+ }
+
+ .skill{
+   margin-top: 10px;
+   margin-bottom: 10px;
+ }
+ 
